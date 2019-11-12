@@ -125,7 +125,7 @@
                             <img class="img-fluid imgCenter" img src="assets/kickflip.jpg">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <button type="button" class="btn btn-danger btn-lg btnCenter">
+                                    <button type="button" class="btn btn-danger btn-lg btnCenter" data-toggle="modal" data-target=".kf-modal-lg">
                                         Kickflip
                                     </button>
                                 </div>
@@ -135,7 +135,7 @@
                             <img class="img-fluid imgCenter" img src="assets/360flip.jpg">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <button type="button" class="btn btn-danger btn-lg btnCenter">
+                                    <button type="button" class="btn btn-danger btn-lg btnCenter" data-toggle="modal" data-target=".360-modal-md">
                                         360 Flip
                                     </button>
                                 </div>
@@ -145,7 +145,7 @@
                             <img class="img-fluid imgCenter" img src="assets/bscrook.jpg">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <button type="button" class="btn btn-danger btn-lg btnCenter">
+                                    <button type="button" class="btn btn-danger btn-lg btnCenter" data-toggle="modal" data-target=".bscrook-modal-sm">
                                         BS Crook
                                     </button>
                                 </div>
@@ -199,8 +199,46 @@
                 </div>
             </div>
         </div>
-    </div>
 
+        <!--Kickflip Modal -->
+        <div class="modal fade kf-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ilzy0viqVes" allowfullscreen></iframe>
+                    </div>
+                    <p>Kickflips are easy. Pop, flip, catch, land. #BOOM</p>
+                </div>
+            </div>
+        </div>
+        
+        <!--360 Flip-->
+        <div class="modal fade 360-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ilzy0viqVes" allowfullscreen></iframe>
+                    </div>
+                    <p>360 Flips are easy. Pop, scissor kick, catch, land. #BOOM</p>
+                </div>
+            </div>
+        </div>
+        
+        <!--BS Crook-->
+        <div class="modal fade bscrook-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ilzy0viqVes" allowfullscreen></iframe>
+                    </div>
+                    <p>Backside Crooks are sick! Nollie in, nollie out! #BOOM</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
 
 
 
@@ -208,9 +246,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="0.bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+</body></html>
 
 <!--
 Sr only means screen reader only, display gets smalled or colorblind changes text from highlighted to current text. Text display as current, no highlighting
@@ -256,5 +292,16 @@ small, medium display stack ontop column width of 12,
 large display 4 columns with 3 images
 used btn danger to color the button
 width 100% of button makes it larger than the image, image takes up full element while image is inside the column
+
+embed a video with modals and change the size of it
+button needs a data toggle
+instead of the #, you can use a class
+    ids#, . classes
+<div class="modal fade bd-example-modal-lg"
+    this is the line we add the class
+    "modal fade kf-modal-lg"
+modal-lg says the the modal is going to be large
+modal dialog needs to be consistent in order to change the size of the modal,
+    <div class="modal-dialog modal-md">
 
 -->
