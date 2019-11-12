@@ -111,7 +111,50 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="coolStuffWrapper">
-                        <button type="button" class="btn btn-lg coolStuffBtn">Get Cool Stuff!</button>
+                        <button type="button" class="btn btn-lg coolStuffBtn" data-toggle="modal" data-target="#coolStuffModal">Get Cool Stuff!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+
+        <!--Cool Stuff Modal-->
+        <div class="modal fade" id="coolStuffModal" tabindex="-1" role="dialog" aria-labelledby="coolStuffLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contentLabel">Get Exclusive Content</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="img-fluid" src="assets/KFS_modal.png">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="modalFormWrapper">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="forName">What's your name?</label>
+                                                <input type="text" class="form-control" id="formName" placeholder="Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="formEmail">Where should we send your cool content?</label>
+                                                <input type="email" class="form-control" id="formEmail" placeholder="Email">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
                     </div>
                 </div>
             </div>
@@ -125,23 +168,23 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="0.bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+</body></html>
 
 <!--
 Sr only means screen reader only, display gets smalled or colorblind changes text from highlighted to current text. Text display as current, no highlighting
 Those column classes are col-6, take up any extra space evenly, mobile state those extra columns collapse
 d-block gives a display of block
+
 img-fluid to help with viewport changes
 Our toggle didn't worka, why was that?
 Carousel has some JavaScript
 href for our anchor class was referencing old class name, had to change to #mainCarousel
-# sign is how it referennces the id
+# sign is how it references the id
 sr-only again would display previous or next, if they are colorbrind etc.
 <div class="carousel-caption d-none d-md-block">
 the text wont be displayed in mobile.
 write media query to help change the width of the photo in a mobile state, however ours looks fine so I'm not gonna bother
+
 "col-sm-12 col-md-1 offset-med-2"
 total column width of 3
 First column width of 1, is where the skateboard is
@@ -150,4 +193,15 @@ col-6 for text
 col class on the right, just takes up and left over space
 row inside of a column, reset the grid system and have a full set of columns to work with
 
+Paste in data toggle after the class name
+Put the modal in before the last container /div, bottom of the page just to keep it separated so it doesnt clutter
+Data target triggers the id of the modal, so must be the same
+need #, button will not trigger the modal
+that & times, is how you add the x button 
+data-dismiss closes the modal
+modals can have grid systems within them
+<div class="col-sm-12">
+    every small width and above give a column width of 12, whole screen!
+Wrapper adds some padding and space around the form 
+Nest forms and wrappers inside a column!
 -->

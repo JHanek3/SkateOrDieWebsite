@@ -25,3 +25,18 @@ button.coolStuffBtn {
     display: block;
     margin: auto;
 }
+
+
+h5.modal-title {
+    width: 100%;
+    text-align: center;
+}
+
+button.btn.btn-primary{
+    display: block;
+    margin: auto;
+}
+
+.modalFormWrapper {
+    padding: 2em;
+}
