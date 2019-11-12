@@ -40,3 +40,16 @@ button.btn.btn-primary{
 .modalFormWrapper {
     padding: 2em;
 }
+
+.imgCenter {
+    display: block;
+    margin: auto;
+}
+
+.btnCenter {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 54%;
+}

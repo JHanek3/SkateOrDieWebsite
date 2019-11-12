@@ -116,6 +116,46 @@
                 </div>
             </div>
         </div>
+
+        <div class="sectionLight">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-4">
+                            <img class="img-fluid imgCenter" img src="assets/kickflip.jpg">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn btn-danger btn-lg btnCenter">
+                                        Kickflip
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <img class="img-fluid imgCenter" img src="assets/360flip.jpg">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn btn-danger btn-lg btnCenter">
+                                        360 Flip
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <img class="img-fluid imgCenter" img src="assets/bscrook.jpg">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn btn-danger btn-lg btnCenter">
+                                        BS Crook
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
         <!-- Modal -->
 
         <!--Cool Stuff Modal-->
@@ -168,7 +208,9 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="0.bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
-</body></html>
+</body>
+
+</html>
 
 <!--
 Sr only means screen reader only, display gets smalled or colorblind changes text from highlighted to current text. Text display as current, no highlighting
@@ -204,4 +246,15 @@ modals can have grid systems within them
     every small width and above give a column width of 12, whole screen!
 Wrapper adds some padding and space around the form 
 Nest forms and wrappers inside a column!
+You want stuff centered?
+Margin, not working?
+Put it in display block and then margin auto
+width and auto margins only work if set to a block element
+
+<div class="col-sm-12 col-lg-4">
+small, medium display stack ontop column width of 12, 
+large display 4 columns with 3 images
+used btn danger to color the button
+width 100% of button makes it larger than the image, image takes up full element while image is inside the column
+
 -->
